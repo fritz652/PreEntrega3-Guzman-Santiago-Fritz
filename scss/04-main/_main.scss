@@ -1,0 +1,50 @@
+main{
+    @include center;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+    h2 {
+        font-size: $m;//24px;
+        @include center;
+    }
+
+    .noCard{
+        @include center;
+        gap:30px;
+    }
+    .card{
+        @include center;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 90px;
+        max-width: 500px;
+        .gridFather{
+            display:grid;
+            grid-template-columns: 1fr;
+           /*  grid-template-rows: repeat(8, 50px); */
+            gap: 10px;
+            width: 300px;
+            input{
+                padding: 10px;
+            }
+            /* button{
+                height: 40px;
+            } */
+        }
+    }
+
+}
+
+.btn {
+    height: 40px;
+    width: 300px;
+    background-color: $background_primary;
+    //border-radius: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    span{
+        font-size: $m;
+    }
+
+}

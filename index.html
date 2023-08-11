@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>buscador</h1>
+    </header>
+    <nav>
+        <ul>
+            <li></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="noCard">
+            <h2 id="titleH2">Simulador de cuotas</h2>
+            <div id="resultado"></div>
+            <button id="btnSolicitar"></button>
+        </section>
+        <section class ="card">
+            <div class="gridFather">
+                <label for="monto"><b>Monto</b></label>
+                <input type="number" id="monto" min="1" step="1" placeholder="cantidad" required>
+
+                <label for="cuotas"><b>Cuotas (1 a 12)</b></label>
+                <input type="number" id="meses" placeholder="1 cuota mensual" min="1" step="1" required>
+
+                <label for="tasa"><b>Tasa de Interés Amual %(TEA):</b></label>
+                <input type="number" id="tasa" placeholder="0%" min="0"  step="1%" required>
+
+                <button onclick="calcularCuotas()" class="btn"><span>calcular</span></button>
+                <button  class="btn"onclick="refrescarPagina()"><span>refrescar</span></button>
+            </div>
+        </section>
+        <script src="./man.js"></script>
+    </main>
+</body>
+</html>
