@@ -46,6 +46,15 @@ button {
   margin-top: 20px;
 }
 
+header input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
 main {
   display: grid;
   justify-content: center;
