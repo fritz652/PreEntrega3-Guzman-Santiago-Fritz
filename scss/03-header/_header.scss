@@ -31,16 +31,34 @@ button {
     margin-top: 20px;
 }
 
-header {
-    input[type=text] {
-        float: right;
-        padding: 6px;
-        border: none;
-        margin-top: 8px;
-        margin-right: 16px;
-        font-size: 17px;
-    }
+
+.nav {
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        padding: 10px 200px;
+        background: $background_primary;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        @include centerFlex;
+        justify-content: space-between;
+        .navLinks{
+            @include centerFlex;
+            column-gap: 20px;
+        }
+        .logo{
+            font-size: $xl;
+            font-weight: 500;
+        }
+        a{
+            color: $primary_text;
+            font-size: $l;
+        }
+        .search-icon{
+            cursor: pointer;
+        }
 }
+
     
     
     

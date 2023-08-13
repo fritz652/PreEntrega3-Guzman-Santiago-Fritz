@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -43,13 +45,34 @@ button {
   margin-top: 20px;
 }
 
-header input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 200px;
+  background: #FFDD06;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .navLinks {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.nav .logo {
+  font-size: 30px;
+  font-weight: 500;
+}
+.nav a {
+  color: #000000;
+  font-size: 24px;
+}
+.nav .search-icon {
+  cursor: pointer;
 }
 
 main {

@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> -->
+    <title>Document</title>   
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
     <header>
-        <input type="text" placeholder="Buscador">
-        <button type="submit"><i class="fa fa-search"></i></button>
+        <nav class="nav">
+            <a class="logo" href="#">Fritz</a>
+            <ul class="navLinks">
+                <li><a href="#">Calcular</a></li>
+                <li><a href="#">Clientes</a></li>
+            </ul>
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25">
+                <path d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"/>
+            </svg>
+            <div class="searchBox">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25">
+                    <path d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"/>
+                </svg>
+                <input type="text" placeholder="Busca tu clientes aquí...">
+            </div>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li></li>
-        </ul>
-    </nav>
     <main>
         <section class="noCard">
             <h2 id="titleH2">Simulador de cuotas</h2>
