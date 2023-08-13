@@ -73,6 +73,15 @@ button {
 }
 .nav .searchIcon {
   cursor: pointer;
+  background-image: url("/assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg");
+  width: 25px;
+  height: 25px;
+}
+.nav .clouseIcon {
+  cursor: pointer;
+  background-image: url("/assets/icons/close_FILL0_wght400_GRAD0_opsz48.svg");
+  width: 25px;
+  height: 25px;
 }
 .nav .searchBox {
   position: absolute;
@@ -97,12 +106,18 @@ button {
 .nav .searchBox .searchIcon {
   position: absolute;
   left: 15px;
-  height: 100%;
+  margin: 10px 0;
 }
 
 .openSearch .searchBox {
   opacity: 1;
   pointer-events: auto;
+}
+
+.openSearch .navLinks a {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s linear;
 }
 
 main {
@@ -143,9 +158,6 @@ main .card .gridFather {
   /*  grid-template-rows: repeat(8, 50px); */
   gap: 10px;
   width: 300px;
-  /* button{
-      height: 40px;
-  } */
 }
 main .card .gridFather input {
   padding: 10px;
@@ -160,6 +172,7 @@ main .card .gridFather input {
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.btn span {
+.btn a {
   font-size: 18px;
+  padding: 0 100px;
 }/*# sourceMappingURL=style.css.map */

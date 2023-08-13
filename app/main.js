@@ -29,8 +29,8 @@ function calcularCuotas() {
     Titleh2Element.style.display = `none`;
 
     const btnSolicitarElement = document.getElementById (`btnSolicitar`);
-    btnSolicitarElement.innerHTML = `<span>solicitar</span>`;
-    //btnSolicitarElement.style.height=`40px`;
+    btnSolicitarElement.innerHTML = `<a href="../pages/solicitud.html">solicitar</a>`;
+   /*  btnSolicitarElement.style.width=`200px`; */
     btnSolicitarElement.classList.add("btn");
 }
 

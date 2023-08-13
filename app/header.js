@@ -5,15 +5,16 @@
 const nav = document.querySelector(".nav"),
 searchIconID = document.querySelector("#searchIconID");
 
-searchIconID.addEventListener("click", mostrarAlerta); // asignacion  del evento
-
-function mostrarAlerta(){  // funcion dentro del evento
+// asignacion  del evento                              //.....se puede resumir en:
+searchIconID.addEventListener("click", mostrarAlerta); //.....searchIconID.addEventListener("click", ()=>{
+// funcion dentro del evento                           //.......nav.classList.toggle("openSearch");
+function mostrarAlerta(){                              //.....});
     nav.classList.toggle("openSearch");
+
+    if(nav.classList.contains("openSearch")){
+        return searchIconID.classList.replace("searchIcon", "clouseIcon");
+    }
+    searchIconID.classList.replace("clouseIcon", "searchIcon");
 }
 
-/* evento con funcion  flecha, lo dejo ahi como una nota para poder entender:
-
-searchIconID.addEventListener("click", ()=>{
-    nav.classList.toggle("openSearch");
-
-}); */
+// aqui se agregara para el navegador responsive

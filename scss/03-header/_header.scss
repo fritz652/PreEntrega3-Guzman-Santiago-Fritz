@@ -32,6 +32,9 @@ button {
 }
 
 
+
+
+
 .nav {
         position: fixed;
         top:0;
@@ -56,7 +59,17 @@ button {
         }
         .searchIcon{
             cursor: pointer;
-
+            //svg
+            background-image: url("/assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg");
+            width: 25px;
+            height: 25px;
+        }
+        .clouseIcon{
+            cursor: pointer;
+            //svg
+            background-image: url("/assets/icons/close_FILL0_wght400_GRAD0_opsz48.svg");
+            width: 25px;
+            height: 25px;
         }
         .searchBox{
             position: absolute;
@@ -81,11 +94,12 @@ button {
             .searchIcon{
                 position: absolute;
                 left: 15px;
-                height: 100%;
+                margin:10px 0; //height: 100%;
             }
         }
         
 }
+
 
 .openSearch {
     .searchBox{
@@ -95,6 +109,16 @@ button {
 }
 
 
+.openSearch {
+    .navLinks{
+        a{
+            opacity: 0;
+            pointer-events:none;
+            transition: all 0.2s linear;
+        }
+    }
+}
+
     
-    
+// nota para continuacion: falta agregar responsive
     

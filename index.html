@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>   
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./app/header.js" defer></script>
-
 </head>
 <body>
     <header>
@@ -14,16 +12,12 @@
             <a class="logo" href="#">Fritz</a>
             <ul class="navLinks">
                 <li><a href="#">Calculadora</a></li>
-                <li><a href="#">Clientes</a></li>
+                <li><a href="./pages/clientes.html">Clientes</a></li>
                 <li><a href="#">Solicitud</a></li>
             </ul>
-            <svg class="searchIcon" id="searchIconID" xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25">
-                <path d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"/>
-            </svg>
+            <div class="searchIcon" id="searchIconID"></div>
             <div class="searchBox">
-                <svg class="searchIcon" xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" width="25">
-                    <path d="M796-121 533-384q-30 26-69.959 40.5T378-329q-108.162 0-183.081-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.125-57.5T572-585q0-81-56.875-138.5T377-781q-82.083 0-139.542 57.5Q180-666 180-585t57.458 138.5Q294.917-389 377-389Z"/>
-                </svg>
+                <div class="searchIcon"></div>
                 <input type="text" placeholder="Busca tus clientes aquí...">
             </div>
         </nav>
@@ -45,11 +39,11 @@
                 <label for="tasa"><b>Tasa de Interés Amual %(TEA):</b></label>
                 <input type="number" id="tasa" placeholder="0%" min="0"  step="1%" required>
 
-                <button id="calcular"  class="btn"><span>calcular</span></button>
-                <button id="refrescar" class="btn"><span>refrescar</span></button>
+                <button id="calcular"  class="btn"><a>calcular</a></button>
+                <button id="refrescar" class="btn"><a>refrescar</a></button>
             </div>
         </section>
-        <!-- <script src="./app/header.js"></script> -->
+        <script src="./app/header.js"></script>
         <script src="./app/main.js"></script>
         <script src="./app/footer.js"></script>
     </main>
