@@ -71,8 +71,38 @@ button {
   color: #000000;
   font-size: 24px;
 }
-.nav .search-icon {
+.nav .searchIcon {
   cursor: pointer;
+}
+.nav .searchBox {
+  position: absolute;
+  right: 250px;
+  height: 45px;
+  max-width: 555px;
+  width: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s linear;
+}
+.nav .searchBox input {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: white;
+  padding: 0 15px 0 45px;
+}
+.nav .searchBox .searchIcon {
+  position: absolute;
+  left: 15px;
+  height: 100%;
+}
+
+.openSearch .searchBox {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 main {

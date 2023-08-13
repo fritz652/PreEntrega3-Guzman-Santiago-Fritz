@@ -1,3 +1,9 @@
+//:::::::::::::::CALCULADORA:::::::::::::::::::::::::
+const calcular = document.querySelector("#calcular"),
+    refrescar =document.querySelector("#refrescar");
+
+calcular.addEventListener("click",calcularCuotas);
+
 function calcularCuotas() {
     const monto = parseFloat(document.getElementById('monto').value);
     const meses = parseInt(document.getElementById('meses').value);
@@ -29,9 +35,18 @@ function calcularCuotas() {
 }
 
 
+refrescar.addEventListener("click",refrescarPagina);
+
 function refrescarPagina() {
     location.reload();
 }
+
+//::::::::::::::::: CLIENTES :::::::::::::::::::
+
+
+//::::::::::::::::  SOLICITUD ::::::::::::::::::
+
+
 
 
 

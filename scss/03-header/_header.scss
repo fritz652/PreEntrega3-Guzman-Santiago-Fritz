@@ -54,10 +54,46 @@ button {
             color: $primary_text;
             font-size: $l;
         }
-        .search-icon{
+        .searchIcon{
             cursor: pointer;
+
         }
+        .searchBox{
+            position: absolute;
+            right: 250px;
+            height: 45px;
+            max-width: 555px;
+            width: 100%;
+            width: 100%;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.2s linear;
+            
+            input{
+                height: 100%;
+                width: 100%;
+                border-radius: 6px;
+                border: none;
+                outline: none;
+                background-color: #ffff;
+                padding: 0 15px 0 45px;
+            }
+            .searchIcon{
+                position: absolute;
+                left: 15px;
+                height: 100%;
+            }
+        }
+        
 }
+
+.openSearch {
+    .searchBox{
+        opacity: 1;
+        pointer-events:auto;
+    }
+}
+
 
     
     
