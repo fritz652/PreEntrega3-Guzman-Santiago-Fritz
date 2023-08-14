@@ -27,7 +27,37 @@
         <section>
             <!-- Formulario -->
             <h2>Solicitud de Credito</h2>
-            
+            <section class ="card">
+                <div class="gridFather">
+                    <label for="DNI"><b>DNI/RUC/PASAPORTE</b></label>
+                    <input type="text" id="documentoID" min="1" step="1" placeholder="Documento de identidad" required>
+
+                    <label for="nombre"><b>Nombre Completo</b></label>
+                    <input type="text" id="nameID" min="1" step="1" placeholder="Nombre(s) y apellidos" required>
+
+                    <label for="Distrito"><b>Distrito</b></label>
+                    <input type="text" id="distritoID" min="1" step="1" placeholder="Nombre(s) y apellidos" required>
+
+                    <label for="Dirección"><b>Dirección</b></label>
+                    <input type="text" id="addresID" min="1" step="1" placeholder="Av/Calle/Jr/Mz/Nro" required>
+
+                    <label for="monto"><b>Monto</b></label>
+                    <input type="number" id="monto" min="1" step="1" placeholder="cantidad" required>
+    
+                    <label for="cuotas"><b>Nro de Cuotas (1 a 12)</b></label>
+                    <input type="number" id="meses" placeholder="1 cuota mensual" min="1" step="1" required>
+
+                    <p for="cuotas"><b>Cuota mensual :  $ nn.nn</b></p>
+                    <!-- <input type="number" id="meses" placeholder="1 cuota mensual" min="1" step="1" required> -->
+    
+                    <label for="tasa"><b>Tasa de Interés Amual %(TEA):</b></label>
+                    <input type="number" id="tasa" placeholder="0%" min="0"  step="1%" required>
+    
+                    <button id="calcular"  class="btn"><a>Solicitar</a></button>
+
+                </div>
+            </section>
+
         </section>
     </main>
 
