@@ -1,6 +1,10 @@
 //  bucador por distrito:
+const inputSearchID = document.querySelector("#inputSearchID");
 
-function filtrarPorDistrito() {
+/* codigo comentado porque esta con la antigua funcionalidad del prompt
+, pero se puede usar para el futuro. */
+
+/* function filtrarPorDistrito() {
     do {
         let palabraClave = prompt("Ingresa el distrito para buscar por distrito");
         palabraClave = palabraClave.toLowerCase(); // Convertir a minúsculas
@@ -18,4 +22,4 @@ function filtrarPorDistrito() {
     } while (respuesta === "SI");
 }
 
-filtrarPorDistrito();
+filtrarPorDistrito(); */
