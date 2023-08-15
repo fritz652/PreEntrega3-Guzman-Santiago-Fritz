@@ -120,7 +120,7 @@ button {
   transition: all 0.2s linear;
 }
 
-main {
+.main {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -128,21 +128,21 @@ main {
   grid-template-columns: 1fr 1fr;
   margin: 30px;
 }
-main h2 {
+.main h2 {
   font-size: 18px;
   display: grid;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-main .noCard {
+.main .noCard {
   display: grid;
   justify-content: center;
   align-items: center;
   height: 100%;
   gap: 30px;
 }
-main .card {
+.main .card {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -152,14 +152,14 @@ main .card {
   padding: 90px;
   max-width: 500px;
 }
-main .card .gridFather {
+.main .card .gridFather {
   display: grid;
   grid-template-columns: 1fr;
   /*  grid-template-rows: repeat(8, 50px); */
   gap: 10px;
   width: 300px;
 }
-main .card .gridFather input {
+.main .card .gridFather input {
   padding: 10px;
 }
 
@@ -175,4 +175,31 @@ main .card .gridFather input {
 .btn a {
   font-size: 18px;
   padding: 0 100px;
+}
+
+.mainCliente {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.mainCliente .contenedorCliente {
+  padding: 50px 0 100px 0;
+  display: grid;
+  gap: 20px;
+}
+.mainCliente .contenedorCliente .persona {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 15px;
+  margin: 20px;
+  width: 450px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.mainCliente .contenedorCliente .persona h3 {
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

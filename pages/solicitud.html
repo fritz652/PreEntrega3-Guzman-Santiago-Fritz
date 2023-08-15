@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav class="nav">
-            <a class="logo" href="#">Fritz</a>
+            <a class="logo" href="../index.html">Fritz</a>
             <ul class="navLinks">
                 <li><a href="/index.html">Calculadora</a></li>
                 <li><a href="../pages/clientes.html">Clientes</a></li>
@@ -23,35 +23,35 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <section>
             <!-- Formulario -->
             <h2>Solicitud de Credito</h2>
-            <section class ="card">
+            <section class ="card" id="cardSolicitud">
                 <div class="gridFather">
                     <label for="DNI"><b>DNI/RUC/PASAPORTE</b></label>
-                    <input type="text" id="documentoID" min="1" step="1" placeholder="Documento de identidad" required>
+                    <input type="text" id="documentoIDs" min="1" step="1" placeholder="Documento de identidad" required>
 
                     <label for="nombre"><b>Nombre Completo</b></label>
-                    <input type="text" id="nameID" min="1" step="1" placeholder="Nombre(s) y apellidos" required>
+                    <input type="text" id="nameIDs" min="1" step="1" placeholder="Nombre(s) y apellidos" required>
 
                     <label for="Distrito"><b>Distrito</b></label>
-                    <input type="text" id="distritoID" min="1" step="1" placeholder="Nombre(s) y apellidos" required>
+                    <input type="text" id="distritoIDs" min="1" step="1" placeholder="Nombre(s) y apellidos" required>
 
                     <label for="Dirección"><b>Dirección</b></label>
                     <input type="text" id="addresID" min="1" step="1" placeholder="Av/Calle/Jr/Mz/Nro" required>
 
                     <label for="monto"><b>Monto</b></label>
-                    <input type="number" id="monto" min="1" step="1" placeholder="cantidad" required>
+                    <input type="number" id="montoIDs" min="1" step="1" placeholder="cantidad" required>
     
                     <label for="cuotas"><b>Nro de Cuotas (1 a 12)</b></label>
-                    <input type="number" id="meses" placeholder="1 cuota mensual" min="1" step="1" required>
+                    <input type="number" id="mesesIDs" placeholder="1 cuota mensual" min="1" step="1" required>
 
-                    <p for="cuotas"><b>Cuota mensual :  $ nn.nn</b></p>
-                    <!-- <input type="number" id="meses" placeholder="1 cuota mensual" min="1" step="1" required> -->
+                    <!-- <p for="cuotas"><b>Cuota mensual :  $ nn.nn</b></p>
+                    <input type="number" id="meses" placeholder="1 cuota mensual" min="1" step="1" required> -->
     
                     <label for="tasa"><b>Tasa de Interés Amual %(TEA):</b></label>
-                    <input type="number" id="tasa" placeholder="0%" min="0"  step="1%" required>
+                    <input type="number" id="tasaIDs" placeholder="0%" min="0"  step="1%" required>
     
                     <button id="calcular"  class="btn"><a>Solicitar</a></button>
 
@@ -62,6 +62,9 @@
     </main>
 
     <script src="../app/header.js"></script>
+    <script src="../app/clientes.js"></script>
+    <script src="../app/buscador.js"></script>
+    <script src="../app/solicitud.js"></script>
     <script src="../app/main.js"></script>
     <script src="../app/footer.js"></script> 
 </body>

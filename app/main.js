@@ -9,6 +9,10 @@ function calcularCuotas() {
     const meses = parseInt(document.getElementById('meses').value);
     const tasa = parseFloat(document.getElementById('tasa').value);
 
+    localStorage.setItem (`monto`,monto);
+    localStorage.setItem (`meses`,meses);
+    localStorage.setItem (`tasa`,tasa);
+
     if (isNaN(monto) || isNaN(meses) || isNaN(tasa)) {
         document.getElementById('resultado').innerText = 'Por favor, ingrese valores válidos.';
         return;
@@ -20,8 +24,8 @@ function calcularCuotas() {
 
     const resultadoElement = document.getElementById(`resultado`);
     resultadoElement.innerHTML = `<h2>La cuota mensual a pagar <br> 
-    es de :$${cuotaMensual.toFixed(2)} <br> 
-    durante ${meses} meses.</h2>`;
+                                    es de :$${cuotaMensual.toFixed(2)} <br> 
+                                    durante ${meses} meses.</h2>`;
 
     resultadoElement.style.textAlign = `center`;
     const Titleh2Element = document.getElementById(`titleH2`);
@@ -33,6 +37,7 @@ function calcularCuotas() {
    /*  btnSolicitarElement.style.width=`200px`; */
     btnSolicitarElement.classList.add("btn");
 }
+
 
 
 refrescar.addEventListener("click",refrescarPagina);

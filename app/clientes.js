@@ -24,26 +24,24 @@ function cargarClientes(){
 
     cartera.forEach(persona =>{
 
-        const div = document.createElement("div")
+        const div = document.createElement("div");
         div.classList.add("persona");
         div.innerHTML = `
-            <div>
+            <div class="personaIten">
                 <img class="clienteImagen" src=${persona.personImg} alt="">
                 <p>ID: ${persona.id}</p>
             </div>
-            <div>
+            <div class="personaIten">
                 <h3>Cliente: ${persona.nombre}</h3>
                 <p>Distrito: ${persona.distrito}</p>
                 <p>Negocio :${persona.negocio}</p>
                 <span>$:${persona.monto}</span><br/>
                 <button Class="verCliente">Ver</button>
             </div>
-        `;contenedorClienteID.append(div);
+        `;
+        contenedorClienteID.append(div);
 
     })
 }
 
 cargarClientes();
-
-//personImg,id, nombre, distrito, negocio, monto
-

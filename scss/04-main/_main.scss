@@ -1,4 +1,4 @@
-main{
+.main{
     @include center;
     grid-template-columns: 1fr 1fr;
     margin: 30px;
@@ -46,3 +46,28 @@ main{
     }
 
 }
+
+// card of people
+.mainCliente{
+    @include center;
+    .contenedorCliente{
+        padding:50px 0 100px 0 ;
+        display: grid;
+        gap: 20px;
+        .persona{
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            @include center;
+            //background: red;
+            border-radius: 15px;
+            margin: 20px;
+            width: 450px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            h3{
+                font-size: $m;
+            }
+        }
+    }
+}
+
+
