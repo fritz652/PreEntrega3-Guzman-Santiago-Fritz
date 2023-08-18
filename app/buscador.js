@@ -1,15 +1,15 @@
-//  bucador por distrito:
+//declarando variables:
+
 const inputSearchID = document.querySelector("#inputSearchID");
 
-/* codigo comentado porque esta con la antigua funcionalidad del prompt
-, pero se puede usar para el futuro. */
+/* :::::::::::::::::::::::::buscador en reconstrucción::::::::::::::::::::::::::::::::::*/
 
 /* function filtrarPorDistrito() {
     do {
-        let palabraClave = prompt("Ingresa el distrito para buscar por distrito");
+        let palabraClave = prompt("Ingresa el distrito para buscar por distrito").toLowerCase();
         palabraClave = palabraClave.toLowerCase(); // Convertir a minúsculas
 
-        let resultado = cartera.filter((per) => per.distrito.toLowerCase().includes(palabraClave));
+        let resultado = cartera.filter((per) => (per.distrito.toLowerCase().includes(palabraClave)) || per.nombre.toLowerCase().includes(palabraClave) || per.negocio.toLowerCase().includes(palabraClave));
 
         if (resultado.length > 0) {
             console.log(resultado);
@@ -22,4 +22,5 @@ const inputSearchID = document.querySelector("#inputSearchID");
     } while (respuesta === "SI");
 }
 
-filtrarPorDistrito(); */
+filtrarPorDistrito();
+ */

@@ -190,7 +190,7 @@ button {
 }
 .mainCliente .contenedorCliente .persona {
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 150px 1fr;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -198,8 +198,23 @@ button {
   border-radius: 15px;
   margin: 20px;
   width: 450px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
 }
 .mainCliente .contenedorCliente .persona h3 {
   font-size: 18px;
+}
+.mainCliente .contenedorCliente .persona .personaIten button {
+  height: 40px;
+  width: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #FFDD06;
+}
+.mainCliente .contenedorCliente .persona .picPerson {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */

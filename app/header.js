@@ -1,6 +1,6 @@
 //:::::::::::::BUSCADOR:::::::::::::::::::
 
-//............Evento del buscador........
+//............Evento del buscador lupa........
 
 const nav = document.querySelector(".nav"),
 searchIconID = document.querySelector("#searchIconID");
@@ -17,4 +17,22 @@ function mostrarAlerta(){                              //.....});
     searchIconID.classList.replace("clouseIcon", "searchIcon");
 }
 
-// aqui se agregara para el navegador responsive
+//::::::::::::::::::boxSearch::::::::::::::::::::::::
+/* let searchBox = document.querySelector("#searchBox");
+let boxSearch = document.querySelector("#boxSearch");
+
+if (boxSearch.addEventListener("keyup", e
+
+)){
+    boxSearch.addEventListener("div");
+    div.innerHTML = ` <h2> hola hola </h2>`
+} */
+
+const inputSerch = document.querySelector("#inputSearch");
+const boxSearch = document.querySelector("#boxSearch");
+
+inputSerch.addEventListener("keyup", function(event) {
+  const textoIngresado = event.target.value;
+  boxSearch.textContent =  textoIngresado;
+});
+

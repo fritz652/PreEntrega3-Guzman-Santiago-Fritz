@@ -56,15 +56,32 @@
         gap: 20px;
         .persona{
             display: grid;
-            grid-template-columns: 100px 1fr;
+            grid-template-columns:150px 1fr;
             @include center;
             //background: red;
             border-radius: 15px;
             margin: 20px;
             width: 450px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
             h3{
                 font-size: $m;
+            }
+            .personaIten{
+                button{
+                    height: 40px;
+                    width: 250px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    border: none;
+                    background-color: $background_primary;
+                }
+            }
+            .picPerson{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap:10px
             }
         }
     }
