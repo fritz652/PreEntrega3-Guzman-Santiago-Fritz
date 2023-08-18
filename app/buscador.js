@@ -4,7 +4,7 @@ const inputSearchID = document.querySelector("#inputSearchID");
 
 /* :::::::::::::::::::::::::buscador en reconstrucción::::::::::::::::::::::::::::::::::*/
 
-/* function filtrarPorDistrito() {
+function filtrarPorDistrito() {
     do {
         let palabraClave = prompt("Ingresa el distrito para buscar por distrito").toLowerCase();
         palabraClave = palabraClave.toLowerCase(); // Convertir a minúsculas
@@ -22,5 +22,4 @@ const inputSearchID = document.querySelector("#inputSearchID");
     } while (respuesta === "SI");
 }
 
-filtrarPorDistrito();
- */
+//filtrarPorDistrito();
