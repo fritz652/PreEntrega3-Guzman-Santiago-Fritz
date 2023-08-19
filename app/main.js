@@ -46,15 +46,5 @@ function refrescarPagina() {
     location.reload();
 }
 
-//::::::::::::::::: CLIENTES  :::::::::::::::::::
-//Aqui se inyectan los clientes al html clientes
-
-
-
-
-//::::::::::::::::  SOLICITUD ::::::::::::::::::
-
-
-
 
 

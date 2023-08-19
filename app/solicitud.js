@@ -49,3 +49,18 @@ tasaIDs.addEventListener("change", function () {
     // Almacenar la tasa en el localStorage cuando el usuario cambie el valor
     localStorage.setItem("tasa", JSON.stringify(tasaIDs.value));
 });
+
+
+/* ::::::::::  alert: https://sweetalert2.github.io/  :::::::::::::::: */
+
+let solicitarID = document.querySelector('#solicitarID');
+
+solicitarID.addEventListener('click', ()=> {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Tu solicitud se envio con éxito',
+        showConfirmButton: false,
+        timer: 1500
+    })
+})
