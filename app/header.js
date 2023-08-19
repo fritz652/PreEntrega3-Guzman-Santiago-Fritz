@@ -28,11 +28,11 @@ if (boxSearch.addEventListener("keyup", e
     div.innerHTML = ` <h2> hola hola </h2>`
 } */
 
-const inputSerch = document.querySelector("#inputSearch");
+/* const inputSerch = document.querySelector("#inputSearch");
 const boxSearch = document.querySelector("#boxSearch");
 
 inputSerch.addEventListener("keyup", function(event) {
   const textoIngresado = event.target.value;
   boxSearch.textContent =  textoIngresado;
-});
+}); */
 

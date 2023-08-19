@@ -1,25 +1,42 @@
-//declarando variables:
+// Función para filtrar y mostrar los clientes según la búsqueda
 
-const inputSearchID = document.querySelector("#inputSearchID");
+function filtrarClientes(busqueda) {
+    const resultados = cartera.filter(persona => {
+        return (
+            persona.nombre.toLowerCase().includes(busqueda.toLowerCase()) ||
+            persona.distrito.toLowerCase().includes(busqueda.toLowerCase()) ||
+            persona.negocio.toLowerCase().includes(busqueda.toLowerCase())
+        );
+    });
 
-/* :::::::::::::::::::::::::buscador en reconstrucción::::::::::::::::::::::::::::::::::*/
+    contenedorClienteID.innerHTML = ""; // Limpiar el contenedor antes de mostrar los resultados
 
-function filtrarPorDistrito() {
-    do {
-        let palabraClave = prompt("Ingresa el distrito para buscar por distrito").toLowerCase();
-        palabraClave = palabraClave.toLowerCase(); // Convertir a minúsculas
-
-        let resultado = cartera.filter((per) => (per.distrito.toLowerCase().includes(palabraClave)) || per.nombre.toLowerCase().includes(palabraClave) || per.negocio.toLowerCase().includes(palabraClave));
-
-        if (resultado.length > 0) {
-            console.log(resultado);
-            alert(`Cliente encontrado en el distrito ${palabraClave}. Revisar la consola para más detalles.`);
-        } else {
-            alert(`Distrito no encontrado: ${palabraClave}`);
-        }
-
-        var respuesta = prompt("¿Deseas hacer otra búsqueda? (Si/No)").toUpperCase();
-    } while (respuesta === "SI");
+    resultados.forEach(persona => {
+        const div = document.createElement("div");
+        div.classList.add("persona");
+        div.innerHTML = `
+            <div class="personaIten picPerson">
+                <img class="clienteImagen" src=${persona.personImg} alt="">
+                <p>ID: ${persona.id}</p>
+            </div>
+            <div class="personaIten">
+                <h3>Cliente: ${persona.nombre}</h3>
+                <p>Distrito: ${persona.distrito}</p>
+                <p>Negocio :${persona.negocio}</p>
+                <p>TEA :${persona.TEA}</p>
+                <span>Monto: ${persona.monto}</span><br/>
+                <p>meses: ${persona.meses}</p>
+                <button Class="verCliente">Ver</button>
+            </div>
+        `;
+        contenedorClienteID.append(div);
+    });
 }
 
-//filtrarPorDistrito();
+// Evento de cambio en el campo de búsqueda
+const inputSearch = document.querySelector("#inputSearch");
+
+inputSearch.addEventListener("keyup", function(event) {
+    const busqueda = event.target.value;
+    filtrarClientes(busqueda);
+});
