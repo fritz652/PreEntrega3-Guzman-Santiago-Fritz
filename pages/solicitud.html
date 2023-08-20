@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,15 +25,15 @@
             <!-- Formulario -->
             <h2>Solicitud de Credito</h2>
             <section class ="card" id="cardSolicitud">
-                <div class="gridFather">
+                <form class="gridFather" action="" method="POST" id="formID">
                     <label for="DNI"><b>DNI/RUC/PASAPORTE</b></label>
-                    <input type="text" id="documentoIDs" min="1" step="1" placeholder="Documento de identidad" required>
+                    <input type="number" id="documentoIDs" min="1" step="1" placeholder="Minimo 8 caracteres" required>
 
                     <label for="nombre"><b>Nombre Completo</b></label>
                     <input type="text" id="nameIDs" min="1" step="1" placeholder="Nombre(s) y apellidos" required>
 
                     <label for="Distrito"><b>Distrito</b></label>
-                    <input type="text" id="distritoIDs" min="1" step="1" placeholder="Nombre(s) y apellidos" required>
+                    <input type="text" id="distritoIDs" min="1" step="1" placeholder="Distrito donde vives" required>
 
                     <label for="Dirección"><b>Dirección</b></label>
                     <input type="text" id="addresID" min="1" step="1" placeholder="Av/Calle/Jr/Mz/Nro" required>
@@ -50,9 +50,9 @@
                     <label for="tasa"><b>Tasa de Interés Amual %(TEA):</b></label>
                     <input type="number" id="tasaIDs" placeholder="0%" min="0"  step="1%" required>
     
-                    <button id="solicitarID"  class="btn"><a>Solicitar</a></button>
+                    <button id="solicitarButtonID" type="submit"  class="btn"><a>Solicitar</a></button>
 
-                </div>
+                </form>
             </section>
 
         </section>

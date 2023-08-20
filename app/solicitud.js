@@ -53,14 +53,90 @@ tasaIDs.addEventListener("change", function () {
 
 /* ::::::::::  alert: https://sweetalert2.github.io/  :::::::::::::::: */
 
-let solicitarID = document.querySelector('#solicitarID');
 
-solicitarID.addEventListener('click', ()=> {
+// variables
+const formID = document.querySelector('#formID');
+
+let documentoIDs = document.querySelector('#documentoIDs');
+let nameIDs = document.querySelector('#nameIDs');
+let distritoIDs = document.querySelector('#distritoIDs');
+let addresID = document.querySelector('#addresID')
+
+let solicitarButtonID = document.querySelector('#solicitarButtonID');
+
+/* ::::: libreria functions sweetalert:::::: */
+
+let warningNumber = function(){
+        Swal.fire({
+            position: 'top-end',
+            icon: 'warning',
+            title: 'Id invalido, escribir minimo 8 numeros',
+            showConfirmButton: false,
+            timer: 1800
+        })
+}
+
+let warningName = function(){
+    Swal.fire({
+        position: 'top-end',
+        icon: 'warning',
+        title: 'Escribe un nombre valido',
+        showConfirmButton: false,
+        timer: 1800
+    })
+}
+
+let warningDistrito = function(){
+    Swal.fire({
+        position: 'top-end',
+        icon: 'warning',
+        title: 'Escribe un distrito valido',
+        showConfirmButton: false,
+        timer: 1800
+    })
+}
+
+let warningDireccion = function(){
+    Swal.fire({
+        position: 'top-end',
+        icon: 'warning',
+        title: 'Escribe un distrito valido',
+        showConfirmButton: false,
+        timer: 1800
+    })
+}
+
+let success = function(){
     Swal.fire({
         position: 'top-end',
         icon: 'success',
-        title: 'Tu solicitud se envio con éxito',
+        title: 'Solicitud enviada',
         showConfirmButton: false,
         timer: 1500
     })
+}
+
+/* :::::::::::::::::::::::::::::::::::: */
+
+// validator de formulario
+formID.addEventListener('submit', e =>{
+    e.preventDefault()
+    var regexLetters = /^[A-Za-z]+$/
+    if (documentoIDs.value.length < 8  ){
+        return warningNumber();
+    }
+    if (!regexLetters.test(nameIDs.value)) {
+        return warningName ();
+    }
+    if (!regexLetters.test(distritoIDs.value)) {
+        return warningDistrito ();
+    }
+    if (!regexLetters.test(addresID.value)) {
+        return warningDistrito();
+    }else{
+        return success();
+    }
 })
+
+
+
