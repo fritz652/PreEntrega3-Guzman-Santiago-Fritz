@@ -96,11 +96,11 @@ let warningDistrito = function(){
     })
 }
 
-let warningDireccion = function(){
+let warningDirection = function(){
     Swal.fire({
         position: 'top-end',
         icon: 'warning',
-        title: 'Escribe un distrito valido',
+        title: 'Escribe una dirección valida',
         showConfirmButton: false,
         timer: 1800
     })
@@ -120,8 +120,8 @@ let success = function(){
 
 // validator de formulario
 formID.addEventListener('submit', e =>{
-    e.preventDefault()
-    var regexLetters = /^[A-Za-z]+$/
+    e.preventDefault();
+    var regexLetters = /^[A-Za-z\s]+$/;  
     if (documentoIDs.value.length < 8  ){
         return warningNumber();
     }
@@ -132,7 +132,7 @@ formID.addEventListener('submit', e =>{
         return warningDistrito ();
     }
     if (!regexLetters.test(addresID.value)) {
-        return warningDistrito();
+        return warningDirection();
     }else{
         return success();
     }
