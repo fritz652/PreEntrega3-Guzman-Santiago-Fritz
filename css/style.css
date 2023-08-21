@@ -60,8 +60,8 @@ button {
 .nav .navLinks {
   display: flex;
   align-items: center;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
 .nav .logo {
   font-size: 30px;
@@ -89,9 +89,9 @@ button {
 }
 .nav .searchBox {
   position: absolute;
-  right: 250px;
+  right: 33%;
   height: 45px;
-  max-width: 555px;
+  max-width: 33%;
   width: 100%;
   width: 100%;
   opacity: 0;
@@ -113,6 +113,20 @@ button {
   margin: 10px 0;
 }
 
+.applyTrolley {
+  cursor: pointer;
+  background-image: url("/assets/icons/customer-qudaoliebiao-line-svgrepo-com.svg");
+  width: 25px;
+  height: 25px;
+}
+
+.profile {
+  cursor: pointer;
+  background-image: url("/assets/icons/profile-circle-svgrepo-com.svg");
+  width: 25px;
+  height: 25px;
+}
+
 .openSearch .searchBox {
   opacity: 1;
   pointer-events: auto;
@@ -124,12 +138,25 @@ button {
   transition: all 0.2s linear;
 }
 
+.mainOne {
+  padding-top: 20px;
+}
+.mainOne section {
+  display: grid;
+  gap: 20px;
+}
+
+.mainTwo {
+  grid-template-columns: 1fr 1fr;
+}
+
 .main {
+  padding-top: 20px;
   display: grid;
   justify-content: center;
   align-items: center;
   height: 100%;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   margin: 30px;
 }
 .main h2 {

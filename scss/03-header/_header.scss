@@ -47,7 +47,7 @@ button {
         justify-content: space-between;
         .navLinks{
             @include centerFlex;
-            column-gap: 20px;
+            column-gap: 50px;
         }
         .logo{
             font-size: $xl;
@@ -68,6 +68,7 @@ button {
             width: 25px;
             height: 25px;
         }
+
         .clouseIcon{
             cursor: pointer;
             //svg
@@ -77,9 +78,9 @@ button {
         }
         .searchBox{
             position: absolute;
-            right: 250px;
+            right: 33%;
             height: 45px;
-            max-width: 555px;
+            max-width: 33%;//555px;
             width: 100%;
             width: 100%;
             opacity: 0;
@@ -104,6 +105,19 @@ button {
         
 }
 
+.applyTrolley{
+    cursor: pointer;
+    background-image: url("/assets/icons/customer-qudaoliebiao-line-svgrepo-com.svg");
+    width: 25px;
+    height: 25px;
+}
+
+.profile{
+    cursor: pointer;
+    background-image: url("/assets/icons/profile-circle-svgrepo-com.svg");
+    width: 25px;
+    height: 25px;
+}
 
 .openSearch {
     .searchBox{

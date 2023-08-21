@@ -47,4 +47,18 @@ function refrescarPagina() {
 }
 
 
+/* ::::::::::::::CERRAR SESION:::::::::::::::: */
+
+let profileID = document.querySelector('#profileID');
+let childProfile = document.querySelector('#childProfile');
+
+profileID.addEventListener("clik", function () {
+    // Se visualiza el card de cerrar
+    childProfile = document.createElement('div');
+    div.classList.add("cardSesionPerson");
+    div.innerHTML = `
+            <h3>Cliente: hello</h3>
+    `;
+})
+
 

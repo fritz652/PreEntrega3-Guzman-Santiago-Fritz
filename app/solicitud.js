@@ -118,7 +118,9 @@ let success = function(){
 
 /* :::::::::::::::::::::::::::::::::::: */
 
-// validator de formulario
+
+/* :::::::::::: validator de formulario ::::::::::::::::::::::*/
+
 formID.addEventListener('submit', e =>{
     e.preventDefault();
     var regexLetters = /^[A-Za-z\s]+$/;  
