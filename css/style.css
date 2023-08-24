@@ -339,7 +339,7 @@ button {
   background-color: #FFDD06;
   border-radius: 8px;
   border: none;
-  color: #fff;
+  /* color: #fff; */
   width: 100%;
   cursor: pointer;
   font-size: 18px;
@@ -349,7 +349,7 @@ button {
 
 .primary-button:hover {
   color: #fff;
-  background: #FF9F0D;
+  background: #070400;
 }
 
 .login-button {
@@ -359,4 +359,9 @@ button {
 
 .form-container .primary-button--Gmail {
   background-color: #FFDD06;
+}
+
+.primary-button--Gmail:hover {
+  color: #fff;
+  background: #070400;
 }/*# sourceMappingURL=style.css.map */

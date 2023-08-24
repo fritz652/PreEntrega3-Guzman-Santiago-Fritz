@@ -70,7 +70,7 @@
     background-color: $primary;
     border-radius: 8px;
     border: none;
-    color: #fff;
+    /* color: #fff; */
     width: 100%;
     cursor: pointer;
     font-size: $m;
@@ -80,7 +80,7 @@
   
   .primary-button:hover {
     color: #fff;
-    background: #FF9F0D;
+    background: #070400;
   }
   
   .login-button {
@@ -92,4 +92,8 @@
     background-color: $primary;
   }  
 
+.primary-button--Gmail:hover {
+    color: #fff;
+    background: #070400;
+  }
   
