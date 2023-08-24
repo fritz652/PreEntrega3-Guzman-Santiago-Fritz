@@ -12,7 +12,7 @@
             <a class="logo" href="../index.html">Fritz</a>
             <ul class="navLinks">
                 <li><a href="../index.html">Calculadora</a></li>
-                <li><a href="../pages/clientes.html">Clientes</a></li>
+                <li><a href="#">Clientes</a></li>
                 <li><a href="../pages/solicitud.html">Solicitud</a></li>
             </ul>
             <div class="searchIcon" id="searchIconID"></div>
@@ -23,7 +23,8 @@
             </div>
             <div class="navLinks">
                 <div class="applyTrolley"></div>
-                <div class="profile"></div>
+                <div id="profileIdButton" class="profile"></div>
+                <div class="openProfile" id="profileSesion"><a href="./login.html">Cerrar sesión</a></div>
             </div>
         </nav>
     </header>
@@ -32,12 +33,9 @@
                 <!-- Aquí se van los cards de los clientes -->
         </div>
     </main>
-
-        <script src="../app/header.js"></script>
+        <script src="../app.js" type="module"></script>
         <script src="../app/clientes.js"></script>
-        <script src="./solicitud.html"></script>
-        <script src="../app/main.js"></script>
-        <script src="../app/footer.js"></script> 
+        <script src="../app/header.js"></script>
         <script src="../app/buscador.js"></script>
 </body>
 </html>

@@ -50,3 +50,5 @@ function cargarClientes(){
 
 cargarClientes();
 
+/* export {cargarClientes} */
+

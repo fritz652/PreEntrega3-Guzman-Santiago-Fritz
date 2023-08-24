@@ -108,15 +108,15 @@ button {
 .applyTrolley{
     cursor: pointer;
     background-image: url("/assets/icons/customer-qudaoliebiao-line-svgrepo-com.svg");
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 .profile{
     cursor: pointer;
     background-image: url("/assets/icons/profile-circle-svgrepo-com.svg");
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 .openSearch {
@@ -134,6 +134,28 @@ button {
             pointer-events:none;
             transition: all 0.2s linear;
         }
+    }
+}
+
+
+
+.openProfile{
+    //@include center;
+    display:none;
+    text-align: center;
+    height: 80px;
+    width: 200px;
+    margin-top: 20px;
+    position:absolute;
+    top: 30px; 
+    right: 210px;
+
+    background: $background;
+    border-radius: 4px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    a{
+        font-size: $sm;
     }
 }
 
