@@ -14,9 +14,23 @@ let persona2 = new Persona("../assets/forCarsPerson/accountPerson.svg",22222222,
 let persona3 = new Persona("../assets/forCarsPerson/accountPerson.svg",33333333, "Domitila Santiago", "San Isidro", "Ferreteria","20%", 2000, 10);
 let persona4 = new Persona("../assets/forCarsPerson/accountPerson.svg",44444444, "Luis Miguel", "San Martin", "Confiteria","20%", 500, 3);
 let persona5 = new Persona("../assets/forCarsPerson/accountPerson.svg",55555555, "Manuel Servantes", "Lima", "Polleria","10%", 3000, 5);
-let persona6 = new Persona("../assets/forCarsPerson/accountPerson.svg",66666666, "Natalia", "San Borja", "Panaderia","15%", 2500, 8);
+let persona6 = new Persona("../assets/forCarsPerson/accountPerson.svg",55556666, "Natalia", "San Borja", "Panaderia","15%", 2500, 8);
 
-let cartera = [persona1, persona2, persona3, persona4, persona5, persona6];
+//let cartera = [persona1, persona2, persona3, persona4, persona5, persona6];  ORIGINAL
+let cartera1 = [persona1, persona2, persona3, persona4, persona5, persona6];
+// :::::::::::::PROBANDO
+let cartera = [];
+let cartera2 = [];
+
+fetch("../app/persona.json")
+.then(response => response.json())
+.then(data => {
+    cartera2 = data;
+    cartera = [...cartera1, ...cartera2]
+    cargarClientes(cartera)
+})
+
+//::::::::::::::HASTA AQUI PROBANDO
 
 // creando cards de clientes:
 
@@ -49,6 +63,3 @@ function cargarClientes(){
 }
 
 cargarClientes();
-
-/* export {cargarClientes} */
-

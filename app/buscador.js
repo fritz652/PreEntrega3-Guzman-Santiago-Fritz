@@ -5,9 +5,11 @@ function filtrarClientes(busqueda) {
         return (
             persona.nombre.toLowerCase().includes(busqueda.toLowerCase()) ||
             persona.distrito.toLowerCase().includes(busqueda.toLowerCase()) ||
-            persona.negocio.toLowerCase().includes(busqueda.toLowerCase())
+            persona.negocio.toLowerCase().includes(busqueda.toLowerCase()) 
         );
     });
+
+    
 
     contenedorClienteID.innerHTML = ""; // Limpiar el contenedor antes de mostrar los resultados
 

@@ -1,0 +1,62 @@
+[
+    {  
+        "personImg": "../assets/forCarsPerson/accountPerson.svg",
+        "id"        : 66666666,
+        "nombre"    : "Zlatan Ibrahimovic",
+        "distrito"  : "Malmo",
+        "negocio"   : "Futbolista",
+        "TEA"       :  10,
+        "monto"     : 50000,
+        "meses"     : 3
+    },
+    {   
+        "personImg": "../assets/forCarsPerson/accountPerson.svg",
+        "id"        : 7777777,
+        "nombre"    : "Cristiano Ronaldo dos Santos Aveiro",
+        "distrito"  : "Sao Pedro do Funchal",
+        "negocio"   : "Futbolista",
+        "TEA"       : 10,
+        "monto"     : 50000,
+        "meses"     : 3
+    },
+    {   
+        "personImg": "../assets/forCarsPerson/accountPerson.svg",
+        "id"        : 88888888,
+        "nombre"    : "Robert Lewandowski",
+        "distrito"  : "Varsobia",
+        "negocio"   : "Futbolista",
+        "TEA"       : 10,
+        "monto"     : 50000,
+        "meses"     : 3
+    },
+    {   
+        "personImg": "../assets/forCarsPerson/accountPerson.svg",
+        "id"        : 9999999,
+        "nombre"    : "Erling Braut Haaland",
+        "distrito"  : "Leeds",
+        "negocio"   : "Futbolista",
+        "TEA"       : 10,
+        "monto"     : 50000,
+        "meses"     : 3
+    },
+    {   
+        "personImg": "../assets/forCarsPerson/accountPerson.svg",
+        "id"        : 1010101010,
+        "nombre"    : "Lionel Andrés Messi Cuccittini",
+        "distrito"  : "Rosario",
+        "negocio"   : "Futbolista",
+        "TEA"       : 10,
+        "monto"     : 50000,
+        "meses"     : 3
+    },
+    {   
+        "personImg": "../assets/forCarsPerson/accountPerson.svg",
+        "id"        : 1111111111,
+        "nombre"    : "Neymar da Silva Santos Júnior",
+        "distrito"  : "Mogi das Cruzes",
+        "negocio"   : "Futbolista",
+        "TEA"       : 10,
+        "monto"     : 50000,
+        "meses"     : 3
+    }
+]
