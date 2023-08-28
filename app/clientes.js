@@ -9,9 +9,9 @@ const Persona = function (personImg,id, nombre, distrito, negocio,TEA, monto,mes
     this.meses = meses;
 }
 
-let persona1 = new Persona("../assets/forCarsPerson/accountPerson.svg",1111111, "Fritz Guzman", "Olivos", "Zapateria","10%", 1000, 6);
-let persona2 = new Persona("../assets/forCarsPerson/accountPerson.svg",22222222, "Carmen Terrones Arias", "Olivos", "Floreria","15%", 1200, 12);
-let persona3 = new Persona("../assets/forCarsPerson/accountPerson.svg",33333333, "Domitila Santiago", "San Isidro", "Ferreteria","20%", 2000, 10);
+let persona1 = new Persona("../assets/forCarsPerson/accountPerson.svg",11111111, "Domitila Santiago", "San Isidro", "Ferreteria","20%", 2000, 10);
+let persona2 = new Persona("../assets/forCarsPerson/accountPerson.svg",22222222, "Fritz Guzman", "Olivos", "Zapateria","10%", 1000, 6);
+let persona3 = new Persona("../assets/forCarsPerson/accountPerson.svg",33333333, "Carmen Terrones Arias", "Olivos", "Floreria","15%", 1200, 12);
 let persona4 = new Persona("../assets/forCarsPerson/accountPerson.svg",44444444, "Luis Miguel", "San Martin", "Confiteria","20%", 500, 3);
 let persona5 = new Persona("../assets/forCarsPerson/accountPerson.svg",55555555, "Manuel Servantes", "Lima", "Polleria","10%", 3000, 5);
 let persona6 = new Persona("../assets/forCarsPerson/accountPerson.svg",55556666, "Natalia", "San Borja", "Panaderia","15%", 2500, 8);

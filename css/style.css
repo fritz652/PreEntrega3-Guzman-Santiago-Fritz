@@ -140,7 +140,6 @@ button {
 
 .openProfile {
   display: none;
-  text-align: center;
   height: 80px;
   width: 200px;
   margin-top: 20px;
@@ -154,6 +153,23 @@ button {
 }
 .openProfile a {
   font-size: 14px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+}
+.openProfile a .clouseProfile {
+  background-image: url("/assets/icons/close_FILL0_wght400_GRAD0_opsz48.svg");
+  width: 30px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .mainOne {

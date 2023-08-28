@@ -123,7 +123,7 @@ let success = function(){
 
 formID.addEventListener('submit', e =>{
     e.preventDefault();
-    var regexLetters = /^[A-Za-z\s]+$/;  
+    var regexLetters = /^[A-Za-z\s]+$/;  //:::::: REGEX 
     if (documentoIDs.value.length < 8  ){
         return warningNumber();
     }
