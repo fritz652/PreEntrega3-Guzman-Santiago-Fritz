@@ -55,37 +55,13 @@ tasaIDs.addEventListener("change", function () {
 /* ::::::::::  alert: https://sweetalert2.github.io/  :::::::::::::::: */
 
 
-// new variables
+// variables
 const formID = document.querySelector('#formID');
 
 let documentoIDs = document.querySelector('#documentoIDs');
 let nameIDs = document.querySelector('#nameIDs');
 let distritoIDs = document.querySelector('#distritoIDs');
 let addresID = document.querySelector('#addresID')
-
-//Escuchando eventos  de entrada:
-// IDs
-documentoIDs.addEventListener("change", function () {
-    // Almacenar el ID en el localStorage cuando el usuario cambie el valor
-    localStorage.setItem("documento", JSON.stringify(documentoIDs.value));
-});
-// names
-nameIDs.addEventListener("change", function () {
-    // Almacenar el ID en el localStorage cuando el usuario cambie el valor
-    localStorage.setItem("nombre", JSON.stringify(nameIDs.value));
-});
-// Distrito
-distritoIDs.addEventListener("change", function () {
-    // Almacenar el ID en el localStorage cuando el usuario cambie el valor
-    localStorage.setItem("distrito", JSON.stringify(distritoIDs.value));
-});
-// Adrres
-addresID.addEventListener("change", function () {
-    // Almacenar el ID en el localStorage cuando el usuario cambie el valor
-    localStorage.setItem("direccion", JSON.stringify(addresID.value));
-});
-
-
 
 let solicitarButtonID = document.querySelector('#solicitarButtonID');
 
