@@ -116,15 +116,19 @@ button {
 .applyTrolley {
   cursor: pointer;
   background-image: url("/assets/icons/customer-qudaoliebiao-line-svgrepo-com.svg");
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .profile {
   cursor: pointer;
   background-image: url("/assets/icons/profile-circle-svgrepo-com.svg");
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .openSearch .searchBox {
