@@ -160,9 +160,9 @@ button {
   display: flex;
   gap: 30px;
 }
-.openProfile a .clouseProfile {
+.openProfile .clouseProfile {
   background-image: url("/assets/icons/close_FILL0_wght400_GRAD0_opsz48.svg");
-  width: 30px;
+  width: 50px;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -170,6 +170,9 @@ button {
   justify-content: center;
   align-items: center;
   height: 100%;
+  position: absolute;
+  top: -20px;
+  right: -5px;
 }
 
 .mainOne {

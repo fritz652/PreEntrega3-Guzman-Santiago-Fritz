@@ -21,6 +21,13 @@ export function cerrarSesion(){
         if (x.style.display === "block")
         x.style.display = "none";
     });
+
+    const clouseProfile = document.querySelector('.clouseProfile');
+
+    clouseProfile.addEventListener('click', ()=>{
+        if (x.style.display === "block")
+        x.style.display = "none";
+    });
 };
 
 cerrarSesion();
