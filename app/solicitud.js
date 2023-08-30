@@ -52,9 +52,6 @@ tasaIDs.addEventListener("change", function () {
 });
 
 
-/* ::::::::::  alert: https://sweetalert2.github.io/  :::::::::::::::: */
-
-
 // new variables
 const formID = document.querySelector('#formID');
 
@@ -85,7 +82,9 @@ addresID.addEventListener("change", function () {
     localStorage.setItem("direccion", JSON.stringify(addresID.value));
 });
 
-/* ::::: libreria functions sweetalert:::::: */
+
+/* ::::::::::: libreria functions sweetalert ::::::::::::::::::::::::: */
+/* ::::::::::  alert: https://sweetalert2.github.io/  :::::::::::::::: */
 
 let warningNumber = function(){
         Swal.fire({
@@ -142,21 +141,22 @@ let success = function(){
 
 /* :::::::::::: validator de formulario ::::::::::::::::::::::*/
 
-formID.addEventListener('submit', e =>{
+let formulariosEnviados = JSON.parse(localStorage.getItem("formularios")) ||  [];
+
+/* :::::::::::: validator de formulario ::::::::::::::::::::::*/
+
+formID.addEventListener('submit', e => {
     e.preventDefault();
     var regexLetters = /^[A-Za-z\s]+$/;  //:::::: REGEX 
-    if (documentoIDs.value.length < 8  ){
-        return warningNumber();
-    }
-    if (!regexLetters.test(nameIDs.value)) {
-        return warningName ();
-    }
-    if (!regexLetters.test(distritoIDs.value)) {
-        return warningDistrito ();
-    }
-    if (!regexLetters.test(addresID.value)) {
-        return warningDirection();
-    }else{
+    if (documentoIDs.value.length < 8) {
+        warningNumber();
+    } else if (!regexLetters.test(nameIDs.value)) {
+        warningName();
+    } else if (!regexLetters.test(distritoIDs.value)) {
+        warningDistrito();
+    } else if (!regexLetters.test(addresID.value)) {
+        warningDirection();
+    } else {
         const formData = {
             id: Date.now(),
             documento: documentoIDs.value,
@@ -168,12 +168,17 @@ formID.addEventListener('submit', e =>{
             tasa: tasaIDs.value
         };
         
-        // Convertir el objeto formData a formato JSON y almacenarlo en el localStorage
-        localStorage.setItem(formData.id, JSON.stringify(formData));
-        return success();
+        // Agregar el nuevo objeto formData al arreglo existente
+        formulariosEnviados.push(formData);
+        
+        // Convertir el arreglo a formato JSON y almacenarlo en el localStorage
+        localStorage.setItem("formularios", JSON.stringify(formulariosEnviados));
+        
+        success();
     }
-})
 
+
+});
 
 
 
