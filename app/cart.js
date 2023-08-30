@@ -1,9 +1,9 @@
-export function openCart() {
+function openCart() {
     const cart = document.querySelector("#cartButton");
     const content = document.createElement("div");
     content.className = "newCard";
     content.innerHTML = `
-        <p>Hello world</p>
+        <p>No hay solicitudes pendientes por aprobar</p>
     `;
 
     cart.addEventListener("click", () => {
@@ -13,9 +13,9 @@ export function openCart() {
         } else {
             document.body.appendChild(content);
         }
-
-        console.log("oe tamare");
     });
+
+
 }
 
 openCart();

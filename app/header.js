@@ -5,7 +5,7 @@
 
 //export {funcionSearch};
 
-function funcionSearch  (){
+function funcionSearch  (){ 
     const nav = document.querySelector(".nav"),
     searchIconID = document.querySelector("#searchIconID");
 
