@@ -160,6 +160,7 @@ button {
     border-radius: 4px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
     a{
         font-size: $sm;
         @include center;
@@ -181,5 +182,17 @@ button {
     
 }
 
+
+.trash{
+    cursor: pointer;
+    background-image: url("/assets/icons/delete_FILL0_wght400_GRAD0_opsz24.svg");
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include center;
+    background-color: red;
+}
+
 // nota para continuacion: falta agregar responsive
     
+

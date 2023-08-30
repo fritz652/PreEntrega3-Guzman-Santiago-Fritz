@@ -10,8 +10,16 @@ function openCart() {
         const content = document.createElement("div"); // Crear un elemento para cada elemento en dataStorage
         content.classList.add("element");
         content.innerHTML = `
-            <div> Persona : ${element.nombre}</div>
+                <div>
+                    <p>Solicitud Nro: ${element.id}</p>
+                    <p>Nombre : ${element.nombre}</p>
+                    <p>Monto: ${element.monto}</p>
+                    <p>Meses: ${element.meses}</p>
+                </div>
+                <divn><span class="trash">...</span></divn>
         `;
+        content.style.display= `flex`
+        content.style.margin= `20px`
 
         container.appendChild(content); // Agregar el elemento actual al contenedor
     });
@@ -23,6 +31,7 @@ function openCart() {
         } else {
             document.body.appendChild(container);
         }
+        
     });
 }
 

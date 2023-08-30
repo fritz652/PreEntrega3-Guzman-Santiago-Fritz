@@ -177,7 +177,9 @@ formID.addEventListener('submit', e => {
         success();
     }
 
-
+    setTimeout(()=>{
+        location.reload();
+    }, 2000);
 });
 
 
