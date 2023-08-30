@@ -104,7 +104,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 350px;
     min-height: 200px;
     background: $background;
     border-radius: 4px;
@@ -113,7 +113,7 @@
     position:absolute; //fixed
     top: 20%;
     right: 5%;
-    font-size: $m;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    font-size: $sm;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
 }

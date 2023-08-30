@@ -121,6 +121,18 @@ button {
   background-repeat: no-repeat;
   background-position: center;
 }
+.applyTrolley span {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  font-size: 14px;
+  place-content: center;
+  position: relative;
+  right: -30px;
+}
 
 .profile {
   cursor: pointer;
@@ -308,7 +320,7 @@ button {
   display: grid;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 350px;
   min-height: 200px;
   background: #F9F6F2;
   border-radius: 4px;
@@ -317,9 +329,9 @@ button {
   position: absolute;
   top: 20%;
   right: 5%;
-  font-size: 18px;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  font-size: 14px;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
 }
 
 /* :::::::::::::::REGISTRO::::::::::::: */

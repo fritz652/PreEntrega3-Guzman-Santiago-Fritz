@@ -19,7 +19,7 @@ function openCart() {
                 <divn><span class="trash">...</span></divn>
         `;
         content.style.display= `flex`
-        content.style.margin= `20px`
+        content.style.margin= `30px`
 
         container.appendChild(content); // Agregar el elemento actual al contenedor
     });

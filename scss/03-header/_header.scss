@@ -112,6 +112,18 @@ button {
     height: 40px;
     background-repeat: no-repeat;
     background-position: center;
+    span{
+        display: flex;
+        width: 20px;
+        height: 20px;
+        color: white;
+        background-color: black;
+        border-radius: 50%;
+        font-size: $sm;
+        place-content: center;
+        position: relative;
+        right: -30px;
+    }
 }
 
 .profile{
