@@ -19,3 +19,9 @@ function openCart() {
 }
 
 openCart();
+
+let solicitarButtonID = document.querySelector('#solicitarButtonID');
+
+solicitarButtonID.addEventListener(()=>{
+    
+});

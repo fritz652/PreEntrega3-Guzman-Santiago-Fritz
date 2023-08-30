@@ -2,7 +2,7 @@
 const montoIDs = document.querySelector("#montoIDs");
 
 // obteniendo el monto del localStorage y parsearlo como JSON
-let recuperandoMonto = JSON.parse(localStorage.getItem("monto"));
+let recuperandoMonto = JSON.parse(localStorage.getItem("monto")); //..............item-5
 
 // Si hay un monto almacenado en el localStorage, autocompletar el campo
 if (recuperandoMonto !== null) {
@@ -20,7 +20,7 @@ montoIDs.addEventListener("change", function () {
 const mesesIDs = document.querySelector("#mesesIDs");
 
 // Intentar obtener los meses del localStorage y parsearlos como JSON
-let recuperarMeses = JSON.parse(localStorage.getItem("meses"));
+let recuperarMeses = JSON.parse(localStorage.getItem("meses"));//..............item-6
 
 // Si hay meses almacenados en el localStorage, autocompletar el campo
 if (recuperarMeses !== null) {
@@ -38,7 +38,7 @@ mesesIDs.addEventListener("change", function () {
 const tasaIDs = document.querySelector("#tasaIDs");
 
 // Intentar obtener la tasa del localStorage y parsearla como JSON
-let recumerarTasa = JSON.parse(localStorage.getItem("tasa"));
+let recumerarTasa = JSON.parse(localStorage.getItem("tasa")); //..............item-7
 
 // Si hay una tasa almacenada en el localStorage, autocompletar el campo
 if (recumerarTasa !== null) {
@@ -84,10 +84,6 @@ addresID.addEventListener("change", function () {
     // Almacenar el ID en el localStorage cuando el usuario cambie el valor
     localStorage.setItem("direccion", JSON.stringify(addresID.value));
 });
-
-
-
-let solicitarButtonID = document.querySelector('#solicitarButtonID');
 
 /* ::::: libreria functions sweetalert:::::: */
 
@@ -161,6 +157,19 @@ formID.addEventListener('submit', e =>{
     if (!regexLetters.test(addresID.value)) {
         return warningDirection();
     }else{
+        const formData = {
+            id: Date.now(),
+            documento: documentoIDs.value,
+            nombre: nameIDs.value,
+            distrito: distritoIDs.value,
+            direccion: addresID.value,
+            monto: montoIDs.value,
+            meses: mesesIDs.value,
+            tasa: tasaIDs.value
+        };
+        
+        // Convertir el objeto formData a formato JSON y almacenarlo en el localStorage
+        localStorage.setItem(formData.id, JSON.stringify(formData));
         return success();
     }
 })
