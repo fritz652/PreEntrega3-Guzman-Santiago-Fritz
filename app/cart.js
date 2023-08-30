@@ -1,27 +1,29 @@
+let dataStorage = JSON.parse(localStorage.getItem("formularios"));  // esto es como si fuera una cartera de neuvos clientes
+console.log(dataStorage);
+
 function openCart() {
     const cart = document.querySelector("#cartButton");
-    const content = document.createElement("div");
-    content.className = "newCard";
-    content.innerHTML = `
-        <p>No hay solicitudes pendientes por aprobar</p>
-    `;
+    const container = document.createElement("div"); // Crear un contenedor para los elementos
+    container.className = "newCard";
+
+    dataStorage.forEach(element => {
+        const content = document.createElement("div"); // Crear un elemento para cada elemento en dataStorage
+        content.classList.add("element");
+        content.innerHTML = `
+            <div> Persona : ${element.nombre}</div>
+        `;
+
+        container.appendChild(content); // Agregar el elemento actual al contenedor
+    });
 
     cart.addEventListener("click", () => {
         // Toggle para mostrar u ocultar el contenido
-        if (document.body.contains(content)) {
-            document.body.removeChild(content);
+        if (document.body.contains(container)) {
+            document.body.removeChild(container);
         } else {
-            document.body.appendChild(content);
+            document.body.appendChild(container);
         }
     });
-
-
 }
 
 openCart();
-
-let solicitarButtonID = document.querySelector('#solicitarButtonID');
-
-solicitarButtonID.addEventListener(()=>{
-    
-});
