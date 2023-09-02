@@ -1,5 +1,5 @@
 /* ::::::::::::::CERRAR SESION:::::::::::::::: */
-export function cerrarSesion(){
+function cerrarSesion(){
     const profileIdButton = document.querySelector("#profileIdButton");
 
     // asignacion  del evento                              

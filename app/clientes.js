@@ -27,7 +27,10 @@ fetch("../app/persona.json")
 .then(data => {
     cartera2 = data;
     cartera = [...cartera1, ...cartera2]
-    cargarClientes(cartera)
+    setTimeout(() => {
+        // agregar cargando la web imagen loadead
+        cargarClientes(cartera)
+    }, 800);
 })
 
 //::::::::::::::HASTA AQUI PROBANDO

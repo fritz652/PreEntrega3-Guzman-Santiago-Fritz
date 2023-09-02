@@ -141,7 +141,7 @@ let success = function(){
 
 /* :::::::::::: validator de formulario ::::::::::::::::::::::*/
 
-let formulariosEnviados = JSON.parse(localStorage.getItem("formularios")) ||  [];
+
 
 /* :::::::::::: validator de formulario ::::::::::::::::::::::*/
 
@@ -169,17 +169,24 @@ formID.addEventListener('submit', e => {
         };
         
         // Agregar el nuevo objeto formData al arreglo existente
+        let formulariosEnviados = JSON.parse(localStorage.getItem("formularios")) ||  [];
         formulariosEnviados.push(formData);
         
         // Convertir el arreglo a formato JSON y almacenarlo en el localStorage
         localStorage.setItem("formularios", JSON.stringify(formulariosEnviados));
         
+            // Función para actualizar la vista
+        actualizarVista(); 
+
+        contador = formulariosEnviados.length;
+        spanCount.innerHTML = contador;
+
         success();
     }
 
-    setTimeout(()=>{
+    /* setTimeout(()=>{
         location.reload();
-    }, 2000);
+    }, 2000); */
 });
 
 

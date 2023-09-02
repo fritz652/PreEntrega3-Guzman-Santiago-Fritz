@@ -1,5 +1,5 @@
 //:::::::::::::::CALCULADORA:::::::::::::::::::::::::
-export function funcionCalculadora(){
+function funcionCalculadora(){
     const calcular = document.querySelector("#calcular"),
     refrescar =document.querySelector("#refrescar");
 
