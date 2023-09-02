@@ -101,7 +101,8 @@
 
 
 .newCard{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 350px;
@@ -110,10 +111,11 @@
     border-radius: 4px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    position:absolute; //fixed
+    position:fixed; //absolute
     top: 20%;
     right: 5%;
     font-size: $sm;
-    /* overflow-x: hidden;
-    overflow-y: scroll; */
+    overflow: scroll;
+    //overflow-x: hidden;
+    //overflow-y: scroll;
 }
