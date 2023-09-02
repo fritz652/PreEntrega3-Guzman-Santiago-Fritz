@@ -2,7 +2,6 @@
 
 //............Evento del buscador lupa........
 
-
 //export {funcionSearch};
 
 function funcionSearch  (){ 
@@ -23,25 +22,3 @@ function funcionSearch  (){
 
 };
 funcionSearch(); 
-
-
-//::::::::::::::::::boxSearch::::::::::::::::::::::::
-/* let searchBox = document.querySelector("#searchBox");
-let boxSearch = document.querySelector("#boxSearch");
-
-if (boxSearch.addEventListener("keyup", e
-
-)){
-    boxSearch.addEventListener("div");
-    div.innerHTML = ` <h2> hola hola </h2>`
-} */
-
-/* const inputSerch = document.querySelector("#inputSearch");
-const boxSearch = document.querySelector("#boxSearch");
-
-inputSerch.addEventListener("keyup", function(event) {
-  const textoIngresado = event.target.value;
-  boxSearch.textContent =  textoIngresado;
-}); */
-
-

@@ -22,9 +22,6 @@ function actualizarVista() {
             </div>
             <div><span class="trash">...</span></div>
         `;
-        /* content.style.display = `flex`;
-        content.style.margin = `30px`;   */
-
         
         container.appendChild(content);
 

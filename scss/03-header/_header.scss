@@ -47,11 +47,20 @@ button {
         justify-content: space-between;
         .navLinks{
             @include centerFlex;
-            column-gap: 50px;
+            column-gap: 60px;
+            li{
+                a{
+                    &:hover{
+                        border-bottom: 1px solid #101725;
+                    }
+                }
+            }
+
         }
         .logo{
             font-size: $xl;
             font-weight: 500;
+            
         }
         a{
             color: $primary_text;
@@ -67,6 +76,8 @@ button {
             background-image: url("/assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg");
             width: 25px;
             height: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .clouseIcon{

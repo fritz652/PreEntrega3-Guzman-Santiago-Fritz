@@ -60,8 +60,11 @@ button {
 .nav .navLinks {
   display: flex;
   align-items: center;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.nav .navLinks li a:hover {
+  border-bottom: 1px solid #101725;
 }
 .nav .logo {
   font-size: 30px;
@@ -80,6 +83,8 @@ button {
   background-image: url("/assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg");
   width: 25px;
   height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .nav .clouseIcon {
   cursor: pointer;

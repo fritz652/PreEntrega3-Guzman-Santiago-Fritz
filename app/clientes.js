@@ -30,7 +30,7 @@ fetch("../app/persona.json")
     setTimeout(() => {
         // agregar cargando la web imagen loadead
         cargarClientes(cartera)
-    }, 800);
+    }, 500);
 })
 
 //::::::::::::::HASTA AQUI PROBANDO
