@@ -100,22 +100,27 @@
 }
 
 
-.newCard{
+.newCard {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    /* min-height: 200px; */
-    height: 40rem;
-    background: $background;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    position:fixed; //absolute
-    top: 20%;
+    width: auto;
+    height:auto;
+    max-height: 40rem;
+    position: fixed;
+    top: 7rem;
     right: 5%;
-    font-size: $sm;
+    background: $background;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: scroll;
-    //overflow-x: hidden;
-    //overflow-y: scroll;
+}
+
+.element {
+    display: flex;
+    margin: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:1.5rem;
+    div{
+        height: 100%;
+    }
 }
