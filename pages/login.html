@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
@@ -21,21 +22,23 @@
             </form>
             <p class="subtitle">------------ o --------------</p>
 
-            <form action="/" class="form">
-                <label for="password" class="label">Correo</label>
-                <input type="text" id="password" placeholder="tucorreo@email.com" class="input input-password">
+            <!-- <form action="/" class="form"> -->
+            <form  id="registroForm" class="form">
+                <label for="email" class="label">Correo</label>
+                <input type="text" id="email" placeholder="tucorreo@email.com" class="input input-password">
 
-                <label for="new-password" class="label">Contraseña</label>
-                <input type="password" id="new-password" placeholder="*******" class="input input-password">
+                <label for="password" class="label">Contraseña</label>
+                <input type="password" id="password" placeholder="*******" class="input input-password">
 
-                <label for="new-password" class="label">Confirmar contraseña</label>
-                <input type="password" id="new-password" placeholder="*******" class="input input-password">
+                <label for="repite-password" class="label">Confirmar contraseña</label>
+                <input type="password" id="repitePassword" placeholder="*******" class="input input-password">
 
-                <input type="submit" value="Registrar" class="primary-button login-button">
+                <input id="registrar" type="submit" value="Registrar" class="primary-button login-button">
                 
             </form>
             
         </div>
     </div>
+    <script src="../app/login.js"></script>
 </body>
 </html>
